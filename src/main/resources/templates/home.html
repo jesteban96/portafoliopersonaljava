@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acerca de</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand me-5" href="/"><p class="h3 me-5" th:text="${concatname}"></p></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav  mb-2 mb-lg-0 justify-content-center">
+                    <li class="nav-item border rounded p-2">
+                        <a class="nav-link active p-0" aria-current="page" href="/"><p class="h5">Inicio</p></a>
+                    </li>
+                    <li class="nav-item border rounded p-2">
+                        <a class="nav-link p-0" href="/projects"><p class="h5">Proyectos Personales</p></a>
+                    </li>
+                    <li class="nav-item border rounded p-2">
+                        <a class="nav-link p-0" href="/home"><p class="h5">Acerca de</p></a>
+                    </li>
+                    <li class="nav-item border rounded p-2">
+                        <a class="nav-link p-0" href="/contact"><p class="h5">Contacto</p></a>
+                    </li>
+                </ul>
+            </div>
+            <span class="navbar-text ml-auto ms-5">
+                <img alt="logo" style="height: 5rem;" th:src="@{/images/imgPersonal.png}" class="rounded-circle">
+            </span>
+        </div>
+    </nav>
+
+</header>
+</body>
+</html>
